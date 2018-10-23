@@ -1,0 +1,185 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+```{r install DESeq2}
+source("https://bioconductor.org/biocLite.R")
+biocLite("DESeq2")
+```
+
+```{r load in data}
+datCts <- fread("RNAseq_WT_DAT.csv", select= c(6, 8:29), skip = 1)
+
+datAnno <- read.csv("dat_sample_annotation.csv", row.names= 1)
+
+
+dat_cts <- as.matrix(datCts$, rownames = "EnsemblGene")
+dat_cts_int <- exp(data_cts)
+dat_coldata <- datAnno[,c("drug_condit", "genotype"),]
+
+```
+
+```{r verify that all rownames appear in cts matrix}
+all(rownames(dat_coldata) %in% colnames(dat_cts))
+```
+```{r verify all rownames and colnames are equal}
+all(rownames(dat_coldata) == colnames(dat_cts))
+```
+```{r unnecessary?}
+dat_cts <- dat_cts[, rownames(dat_coldata)]
+all(rownames(dat_coldata) == colnames(dat_cts))
+```
+```{r}
+dat_phenoData <- new("AnnotatedDataFrame",
+                     data= dat_coldata)
+dat_eset <- ExpressionSet(assayData = dat_cts,
+                          phenoData = dat_phenoData)
+```
+```{r}
+library(viper)
+male_regul <- readRDS("Fly_Male-tf_regulon.RDS")
+dat.viper <- viper(dat_eset, regulon = male_regul)
+```
+
+
+
+
+
+
+
+```{r install and load packages}
+source("https://bioconductor.org/biocLite.R")
+
+if(!require("pacman", character.only = TRUE)) install.packages("pacman")
+pacman::p_load(viper,data.table,dplyr)
+
+```
+
+```{r load fly data}
+male_regul <- readRDS("Fly_Male-tf_regulon.RDS")
+
+male_regul_pruned <- pruneRegulon(male, adaptive = TRUE)
+
+
+# expression assay data
+dsetM <- fread(file ="dgrp.array.exp.male.csv")
+```
+
+```{r generate expressionsets from matrices}
+# create ExpressionSet object
+males.matrix <- as.matrix(dsetM, rownames = "gene")
+males.eset <- ExpressionSet(assayData= males.matrix)
+
+```
+
+
+```{r run viper}
+males.viper <- viper(males.eset, regulon = male_regul)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```{r}
+library(assertthat)
+library(magrittr)
+
+infer.counts <- function(x, digits=3) {
+    assert_that(all(x >= 0))
+    assert_that(digits >= 2)
+    ## Get all diffs between successive unique values
+    diffs <- x %>% sort %>% unique %>% diff
+    ## Round to a few digits to work around inexact representation
+    approxdiffs <- signif(diffs, digits)
+    ## Find the rounded interval that occurs most often
+    approxguess <- approxdiffs %>% table %>% .[which.max(.)] %>% names %>% as.numeric
+    ## Find all the intervals that were rounded to the selected one, and take their mean
+    unit.guess <- diffs[approxdiffs == approxguess] %>% mean
+    message("Guessing 1 count = ", unit.guess)
+    ## Divide the original vector by the unit guess, and round to a
+    ## few significant digits, which should ideally round everything
+    ## to integers.
+    round(x / unit.guess, digits)
+}
+
+```
+```{r}
+normcounts <- dat_cts
+counts <- apply(normcounts, 2, infer.counts)
+```
+```{r}
+normcounts[1:5, 1:5]
+```
+```{r}
+counts[1:5, 1:5]
+```
+
+
+
+
+
+
+
+```{r}
+library("DESeq2")
+dat_dds <- DESeqDataSetFromMatrix(countData = dat_cts,
+                              colData = dat_coldata,
+                              design = ~ drug_condit)
+dat_dds
+```
+
