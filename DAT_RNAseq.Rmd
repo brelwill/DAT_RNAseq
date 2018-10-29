@@ -6,41 +6,63 @@ output: html_notebook
 
 ```{r install DESeq2}
 source("https://bioconductor.org/biocLite.R")
-biocLite("DESeq2")
+#biocLite("DESeq2")
+biocLite("sRAP")
+install.packages("Rcpp")
+install.packages("stringi")
 ```
 
 ```{r load in data}
-datCts <- fread("RNAseq_WT_DAT.csv", select= c(6, 8:29), skip = 1)
+library(data.table)
 
-datAnno <- read.csv("dat_sample_annotation.csv", row.names= 1)
+datCts <- data.frame(fread("RNAseq_WT_DAT.csv", select= c(7:29), skip = 1, header = TRUE), row.names= 1)
+dat.Cts <- t(datCts)
+dat.Cts <- data.frame(as.matrix(dat.Cts, row.names = FALSE))
 
 
-dat_cts <- as.matrix(datCts$, rownames = "EnsemblGene")
-dat_cts_int <- exp(data_cts)
-dat_coldata <- datAnno[,c("drug_condit", "genotype"),]
+
+datAnno <- file.path("dat_sample_annotation.txt")
+                      #row.names= 1)
+
+dat.Anno <- read.table("dat_sample_annotation.txt")
+
+
+
+#for DeSeq2
+##dat.exp.values <- write.table(datCts, "dat_exp_values.txt", sep = " ", row.names = TRUE, col.names = TRUE)
+##DAT.expression <- read.table("dat_exp_values.txt")
+
+
+#dat_cts <- as.matrix(datCts, rownames = "Transcript")
+#dat_coldata <- datAnno[,c("drug_condit", "genotype"),]
 
 ```
 
-```{r verify that all rownames appear in cts matrix}
+```{r verify that all rownames appear in cts matrix: DeSeq2}
 all(rownames(dat_coldata) %in% colnames(dat_cts))
 ```
-```{r verify all rownames and colnames are equal}
+```{r verify all rownames and colnames are equal: DeSeq2}
 all(rownames(dat_coldata) == colnames(dat_cts))
 ```
-```{r unnecessary?}
+```{r unnecessary?: Deseq2}
 dat_cts <- dat_cts[, rownames(dat_coldata)]
 all(rownames(dat_coldata) == colnames(dat_cts))
 ```
+
 ```{r}
-dat_phenoData <- new("AnnotatedDataFrame",
-                     data= dat_coldata)
-dat_eset <- ExpressionSet(assayData = dat_cts,
-                          phenoData = dat_phenoData)
+library(Rcpp)
+library(stringi)
+library(sRAP)
+
+
+project.folder <- getwd()
+project.name <- "DAT_RNAseq"
 ```
 ```{r}
-library(viper)
-male_regul <- readRDS("Fly_Male-tf_regulon.RDS")
-dat.viper <- viper(dat_eset, regulon = male_regul)
+
+RNA.qc(datAnno, dat.Cts, project.name,
+project.folder, plot.legend= FALSE,
+color.palette = c("green", "orange"))
 ```
 
 
@@ -49,35 +71,8 @@ dat.viper <- viper(dat_eset, regulon = male_regul)
 
 
 
-```{r install and load packages}
-source("https://bioconductor.org/biocLite.R")
-
-if(!require("pacman", character.only = TRUE)) install.packages("pacman")
-pacman::p_load(viper,data.table,dplyr)
-
-```
-
-```{r load fly data}
-male_regul <- readRDS("Fly_Male-tf_regulon.RDS")
-
-male_regul_pruned <- pruneRegulon(male, adaptive = TRUE)
 
 
-# expression assay data
-dsetM <- fread(file ="dgrp.array.exp.male.csv")
-```
-
-```{r generate expressionsets from matrices}
-# create ExpressionSet object
-males.matrix <- as.matrix(dsetM, rownames = "gene")
-males.eset <- ExpressionSet(assayData= males.matrix)
-
-```
-
-
-```{r run viper}
-males.viper <- viper(males.eset, regulon = male_regul)
-```
 
 
 

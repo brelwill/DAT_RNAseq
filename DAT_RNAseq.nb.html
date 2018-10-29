@@ -178,169 +178,29 @@ $(document).ready(function () {
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc291cmNlKFwiaHR0cHM6Ly9iaW9jb25kdWN0b3Iub3JnL2Jpb2NMaXRlLlJcIilcbmBgYCJ9 -->
-<pre class="r"><code>source(&quot;https://bioconductor.org/biocLite.R&quot;)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc291cmNlKFwiaHR0cHM6Ly9iaW9jb25kdWN0b3Iub3JnL2Jpb2NMaXRlLlJcIilcbiNiaW9jTGl0ZShcIkRFU2VxMlwiKVxuYmlvY0xpdGUoXCJzUkFQXCIpXG5pbnN0YWxsLnBhY2thZ2VzKFwiUmNwcFwiKVxuaW5zdGFsbC5wYWNrYWdlcyhcInN0cmluZ2lcIilcbmBgYCJ9 -->
+<pre class="r"><code>source(&quot;https://bioconductor.org/biocLite.R&quot;)
+#biocLite(&quot;DESeq2&quot;)
+biocLite(&quot;sRAP&quot;)
+install.packages(&quot;Rcpp&quot;)
+install.packages(&quot;stringi&quot;)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiQmlvY29uZHVjdG9yIHZlcnNpb24gMy42IChCaW9jSW5zdGFsbGVyIDEuMjguMCksXG4gID9iaW9jTGl0ZSBmb3IgaGVscFxuQSBuZXcgdmVyc2lvbiBvZiBCaW9jb25kdWN0b3IgaXMgYXZhaWxhYmxlIGFmdGVyXG4gIGluc3RhbGxpbmcgdGhlIG1vc3QgcmVjZW50IHZlcnNpb24gb2YgUjsgc2VlXG4gIGh0dHA6Ly9iaW9jb25kdWN0b3Iub3JnL2luc3RhbGxcbiJ9 -->
-<pre><code>Bioconductor version 3.6 (BiocInstaller 1.28.0),
-  ?biocLite for help
-A new version of Bioconductor is available after
-  installing the most recent version of R; see
-  http://bioconductor.org/install</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYmlvY0xpdGUoXCJERVNlcTJcIilcbmBgYCJ9 -->
-<pre class="r"><code>biocLite(&quot;DESeq2&quot;)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiQmlvQ19taXJyb3I6IGh0dHBzOi8vYmlvY29uZHVjdG9yLm9yZ1xuVXNpbmcgQmlvY29uZHVjdG9yIDMuNiAoQmlvY0luc3RhbGxlciAxLjI4LjApLCBSXG4gIDMuNC4zICgyMDE3LTExLTMwKS5cbkluc3RhbGxpbmcgcGFja2FnZShzKSDjpLzjuLFERVNlcTLjpLzjuLJcbmNhbm5vdCBvcGVuIFVSTCAnaHR0cHM6Ly93d3cuc3RhdHMub3guYWMudWsvcHViL1JXaW4vc3JjL2NvbnRyaWIvUEFDS0FHRVMucmRzJzogSFRUUCBzdGF0dXMgd2FzICc0MDQgTm90IEZvdW5kJ2Nhbm5vdCBvcGVuIFVSTCAnaHR0cHM6Ly93d3cuc3RhdHMub3guYWMudWsvcHViL1JXaW4vYmluL3dpbmRvd3MvY29udHJpYi8zLjQvUEFDS0FHRVMucmRzJzogSFRUUCBzdGF0dXMgd2FzICc0MDQgTm90IEZvdW5kJ3RyeWluZyBVUkwgJ2h0dHBzOi8vYmlvY29uZHVjdG9yLm9yZy9wYWNrYWdlcy8zLjYvYmlvYy9iaW4vd2luZG93cy9jb250cmliLzMuNC9ERVNlcTJfMS4xOC4xLnppcCdcbkNvbnRlbnQgdHlwZSAnYXBwbGljYXRpb24vemlwJyBsZW5ndGggNDU0MjM4OSBieXRlcyAoNC4zIE1CKVxuZG93bmxvYWRlZCA0LjMgTUJcbiJ9 -->
-<pre><code>BioC_mirror: https://bioconductor.org
-Using Bioconductor 3.6 (BiocInstaller 1.28.0), R
-  3.4.3 (2017-11-30).
-Installing package(s) &lt;U+393C&gt;&lt;U+3E31&gt;DESeq2&lt;U+393C&gt;&lt;U+3E32&gt;
-cannot open URL 'https://www.stats.ox.ac.uk/pub/RWin/src/contrib/PACKAGES.rds': HTTP status was '404 Not Found'cannot open URL 'https://www.stats.ox.ac.uk/pub/RWin/bin/windows/contrib/3.4/PACKAGES.rds': HTTP status was '404 Not Found'trying URL 'https://bioconductor.org/packages/3.6/bioc/bin/windows/contrib/3.4/DESeq2_1.18.1.zip'
-Content type 'application/zip' length 4542389 bytes (4.3 MB)
-downloaded 4.3 MB</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoicGFja2FnZSDigJhERVNlcTLigJkgc3VjY2Vzc2Z1bGx5IHVucGFja2VkIGFuZCBNRDUgc3VtcyBjaGVja2VkXG5cblRoZSBkb3dubG9hZGVkIGJpbmFyeSBwYWNrYWdlcyBhcmUgaW5cblx0QzpcXFVzZXJzXFxIZW5yeVxcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXFJ0bXB1UU5sVGdcXGRvd25sb2FkZWRfcGFja2FnZXNcbiJ9 -->
-<pre><code>package ‘DESeq2’ successfully unpacked and MD5 sums checked
-
-The downloaded binary packages are in
-    C:\Users\Henry\AppData\Local\Temp\RtmpuQNlTg\downloaded_packages</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiaW5zdGFsbGF0aW9uIHBhdGggbm90IHdyaXRlYWJsZSwgdW5hYmxlIHRvXG4gIHVwZGF0ZSBwYWNrYWdlczogY2x1c3RlciwgZm9yZWlnbiwgTUFTUyxcbiAgTWF0cml4LCBtZ2N2LCBubG1lLCBycGFydCwgc3Vydml2YWxcbk9sZCBwYWNrYWdlczogJ3JsYW5nJywgJ3Rpbnl0ZXgnLCAneGZ1bidcbiJ9 -->
-<pre><code>installation path not writeable, unable to
-  update packages: cluster, foreign, MASS,
-  Matrix, mgcv, nlme, rpart, survival
-Old packages: 'rlang', 'tinytex', 'xfun'</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiVXBkYXRlIGFsbC9zb21lL25vbmU/IFthL3Mvbl06IFxuIn0= -->
-<pre><code>Update all/some/none? [a/s/n]: </code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYVxuYGBgIn0= -->
-<pre class="r"><code>a</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG4gIFRoZXJlIGFyZSBiaW5hcnkgdmVyc2lvbnMgYXZhaWxhYmxlIGJ1dCB0aGVcbiAgc291cmNlIHZlcnNpb25zIGFyZSBsYXRlcjpcbiAgICAgICAgYmluYXJ5IHNvdXJjZSBuZWVkc19jb21waWxhdGlvblxucmxhbmcgICAgMC4yLjIgIDAuMy4wICAgICAgICAgICAgICBUUlVFXG50aW55dGV4ICAgIDAuOCAgICAwLjkgICAgICAgICAgICAgRkFMU0VcbnhmdW4gICAgICAgMC4zICAgIDAuNCAgICAgICAgICAgICBGQUxTRVxuXG4gIEJpbmFyaWVzIHdpbGwgYmUgaW5zdGFsbGVkXG4ifQ== -->
-<pre><code>
-  There are binary versions available but the
-  source versions are later:
-        binary source needs_compilation
-rlang    0.2.2  0.3.0              TRUE
-tinytex    0.8    0.9             FALSE
-xfun       0.3    0.4             FALSE
-
-  Binaries will be installed</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoidHJ5aW5nIFVSTCAnaHR0cHM6Ly9jcmFuLnJzdHVkaW8uY29tL2Jpbi93aW5kb3dzL2NvbnRyaWIvMy40L3JsYW5nXzAuMi4yLnppcCdcbkNvbnRlbnQgdHlwZSAnYXBwbGljYXRpb24vemlwJyBsZW5ndGggODIwNzE5IGJ5dGVzICg4MDEgS0IpXG5kb3dubG9hZGVkIDgwMSBLQlxuIn0= -->
-<pre><code>trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.4/rlang_0.2.2.zip'
-Content type 'application/zip' length 820719 bytes (801 KB)
-downloaded 801 KB</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoicGFja2FnZSDigJhybGFuZ+KAmSBzdWNjZXNzZnVsbHkgdW5wYWNrZWQgYW5kIE1ENSBzdW1zIGNoZWNrZWRcbiJ9 -->
-<pre><code>package ‘rlang’ successfully unpacked and MD5 sums checked</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiY2Fubm90IHJlbW92ZSBwcmlvciBpbnN0YWxsYXRpb24gb2YgcGFja2FnZSDjpLzjuLFybGFuZ+OkvOO4slxuIn0= -->
-<pre><code>cannot remove prior installation of package &lt;U+393C&gt;&lt;U+3E31&gt;rlang&lt;U+393C&gt;&lt;U+3E32&gt;</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5UaGUgZG93bmxvYWRlZCBiaW5hcnkgcGFja2FnZXMgYXJlIGluXG5cdEM6XFxVc2Vyc1xcSGVucnlcXEFwcERhdGFcXExvY2FsXFxUZW1wXFxSdG1wdVFObFRnXFxkb3dubG9hZGVkX3BhY2thZ2VzXG4ifQ== -->
-<pre><code>
-The downloaded binary packages are in
-    C:\Users\Henry\AppData\Local\Temp\RtmpuQNlTg\downloaded_packages</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiaW5zdGFsbGluZyB0aGUgc291cmNlIHBhY2thZ2VzIOOkvOO4sXRpbnl0ZXjjpLzjuLIsIOOkvOO4sXhmdW7jpLzjuLJcblxudHJ5aW5nIFVSTCAnaHR0cHM6Ly9jcmFuLnJzdHVkaW8uY29tL3NyYy9jb250cmliL3Rpbnl0ZXhfMC45LnRhci5neidcbkNvbnRlbnQgdHlwZSAnYXBwbGljYXRpb24veC1nemlwJyBsZW5ndGggMjEwMTIgYnl0ZXMgKDIwIEtCKVxuZG93bmxvYWRlZCAyMCBLQlxuXG50cnlpbmcgVVJMICdodHRwczovL2NyYW4ucnN0dWRpby5jb20vc3JjL2NvbnRyaWIveGZ1bl8wLjQudGFyLmd6J1xuQ29udGVudCB0eXBlICdhcHBsaWNhdGlvbi94LWd6aXAnIGxlbmd0aCA0ODU3OCBieXRlcyAoNDcgS0IpXG5kb3dubG9hZGVkIDQ3IEtCXG4ifQ== -->
-<pre><code>installing the source packages &lt;U+393C&gt;&lt;U+3E31&gt;tinytex&lt;U+393C&gt;&lt;U+3E32&gt;, &lt;U+393C&gt;&lt;U+3E31&gt;xfun&lt;U+393C&gt;&lt;U+3E32&gt;
-
-trying URL 'https://cran.rstudio.com/src/contrib/tinytex_0.9.tar.gz'
-Content type 'application/x-gzip' length 21012 bytes (20 KB)
-downloaded 20 KB
-
-trying URL 'https://cran.rstudio.com/src/contrib/xfun_0.4.tar.gz'
-Content type 'application/x-gzip' length 48578 bytes (47 KB)
-downloaded 47 KB</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiKiBpbnN0YWxsaW5nICpzb3VyY2UqIHBhY2thZ2UgJ3hmdW4nIC4uLlxuKiogcGFja2FnZSAneGZ1bicgc3VjY2Vzc2Z1bGx5IHVucGFja2VkIGFuZCBNRDUgc3VtcyBjaGVja2VkXG4qKiBSXG4qKiBpbnN0XG4qKiBwcmVwYXJpbmcgcGFja2FnZSBmb3IgbGF6eSBsb2FkaW5nXG4qKiBoZWxwXG4qKiogaW5zdGFsbGluZyBoZWxwIGluZGljZXNcbiAgY29udmVydGluZyBoZWxwIGZvciBwYWNrYWdlICd4ZnVuJ1xuICAgIGZpbmRpbmcgSFRNTCBsaW5rcyAuLi4gZG9uZVxuICAgIFJzY3JpcHQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBodG1sICBcbiAgICBhdHRyICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaHRtbCAgXG4gICAgZG93bmxvYWRfZmlsZSAgICAgICAgICAgICAgICAgICAgICAgICAgIGh0bWwgIFxuICAgIGVtYmVkX2ZpbGUgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBodG1sICBcbiAgICBmaWxlX2V4dCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaHRtbCAgXG4gICAgZmlsZV9zdHJpbmcgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGh0bWwgIFxuICAgIGdzdWJfZmlsZSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBodG1sICBcbiAgICBpbl9kaXIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaHRtbCAgXG4gICAgaW5zdGFsbF9kaXIgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGh0bWwgIFxuICAgIGlzRkFMU0UgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBodG1sICBcbiAgICBpc19hc2NpaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaHRtbCAgXG4gICAgbmF0aXZlX2VuY29kZSAgICAgICAgICAgICAgICAgICAgICAgICAgIGh0bWwgIFxuICAgIG5vcm1hbGl6ZV9wYXRoICAgICAgICAgICAgICAgICAgICAgICAgICBodG1sICBcbiAgICBudW1iZXJzX3RvX3dvcmRzICAgICAgICAgICAgICAgICAgICAgICAgaHRtbCAgXG4gICAgb3B0aXBuZyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGh0bWwgIFxuICAgIG9zICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBodG1sICBcbiAgICBwYXJzZV9vbmx5ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaHRtbCAgXG4gICAgcGtnX2F0dGFjaCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGh0bWwgIFxuICAgIHByb3NlX2luZGV4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICBodG1sICBcbiAgICBwcm90ZWN0X21hdGggICAgICAgICAgICAgICAgICAgICAgICAgICAgaHRtbCAgXG4gICAgcmF3X3N0cmluZyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGh0bWwgIFxuICAgIHJlYWRfdXRmOCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBodG1sICBcbiAgICByZXZfY2hlY2sgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaHRtbCAgXG4gICAgcnN0dWRpb190eXBlICAgICAgICAgICAgICAgICAgICAgICAgICAgIGh0bWwgIFxuICAgIHNhbWVfcGF0aCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBodG1sICBcbiAgICBzZXNzaW9uX2luZm8gICAgICAgICAgICAgICAgICAgICAgICAgICAgaHRtbCAgXG4gICAgc3RyaWN0X2xpc3QgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGh0bWwgIFxuICAgIHRvanNvbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBodG1sICBcbiAgICB0cnlfc2lsZW50ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaHRtbCAgXG4qKiBidWlsZGluZyBwYWNrYWdlIGluZGljZXNcbioqIGluc3RhbGxpbmcgdmlnbmV0dGVzXG4qKiB0ZXN0aW5nIGlmIGluc3RhbGxlZCBwYWNrYWdlIGNhbiBiZSBsb2FkZWRcbioqKiBhcmNoIC0gaTM4NlxuKioqIGFyY2ggLSB4NjRcbiogRE9ORSAoeGZ1bilcbkluIFIgQ01EIElOU1RBTExcbiogaW5zdGFsbGluZyAqc291cmNlKiBwYWNrYWdlICd0aW55dGV4JyAuLi5cbioqIHBhY2thZ2UgJ3Rpbnl0ZXgnIHN1Y2Nlc3NmdWxseSB1bnBhY2tlZCBhbmQgTUQ1IHN1bXMgY2hlY2tlZFxuKiogUlxuKiogcHJlcGFyaW5nIHBhY2thZ2UgZm9yIGxhenkgbG9hZGluZ1xuKiogaGVscFxuKioqIGluc3RhbGxpbmcgaGVscCBpbmRpY2VzXG4gIGNvbnZlcnRpbmcgaGVscCBmb3IgcGFja2FnZSAndGlueXRleCdcbiAgICBmaW5kaW5nIEhUTUwgbGlua3MgLi4uIGRvbmVcbiAgICBjb3B5X3Rpbnl0ZXggICAgICAgICAgICAgICAgICAgICAgICAgICAgaHRtbCAgXG4gICAgaW5zdGFsbF90aW55dGV4ICAgICAgICAgICAgICAgICAgICAgICAgIGh0bWwgIFxuICAgIGxhdGV4bWsgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBodG1sICBcbiAgICBwYXJzZV9wYWNrYWdlcyAgICAgICAgICAgICAgICAgICAgICAgICAgaHRtbCAgXG4gICAgcl90ZXhtZiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGh0bWwgIFxuICAgIHRsX3BrZ3MgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBodG1sICBcbiAgICB0bF9zaXplcyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaHRtbCAgXG4gICAgdGxtZ3IgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGh0bWwgIFxuKiogYnVpbGRpbmcgcGFja2FnZSBpbmRpY2VzXG4qKiB0ZXN0aW5nIGlmIGluc3RhbGxlZCBwYWNrYWdlIGNhbiBiZSBsb2FkZWRcbioqKiBhcmNoIC0gaTM4NlxuKioqIGFyY2ggLSB4NjRcbiogRE9ORSAodGlueXRleClcbkluIFIgQ01EIElOU1RBTExcbiJ9 -->
-<pre><code>* installing *source* package 'xfun' ...
-** package 'xfun' successfully unpacked and MD5 sums checked
-** R
-** inst
-** preparing package for lazy loading
-** help
-*** installing help indices
-  converting help for package 'xfun'
-    finding HTML links ... done
-    Rscript                                 html  
-    attr                                    html  
-    download_file                           html  
-    embed_file                              html  
-    file_ext                                html  
-    file_string                             html  
-    gsub_file                               html  
-    in_dir                                  html  
-    install_dir                             html  
-    isFALSE                                 html  
-    is_ascii                                html  
-    native_encode                           html  
-    normalize_path                          html  
-    numbers_to_words                        html  
-    optipng                                 html  
-    os                                      html  
-    parse_only                              html  
-    pkg_attach                              html  
-    prose_index                             html  
-    protect_math                            html  
-    raw_string                              html  
-    read_utf8                               html  
-    rev_check                               html  
-    rstudio_type                            html  
-    same_path                               html  
-    session_info                            html  
-    strict_list                             html  
-    tojson                                  html  
-    try_silent                              html  
-** building package indices
-** installing vignettes
-** testing if installed package can be loaded
-*** arch - i386
-*** arch - x64
-* DONE (xfun)
-In R CMD INSTALL
-* installing *source* package 'tinytex' ...
-** package 'tinytex' successfully unpacked and MD5 sums checked
-** R
-** preparing package for lazy loading
-** help
-*** installing help indices
-  converting help for package 'tinytex'
-    finding HTML links ... done
-    copy_tinytex                            html  
-    install_tinytex                         html  
-    latexmk                                 html  
-    parse_packages                          html  
-    r_texmf                                 html  
-    tl_pkgs                                 html  
-    tl_sizes                                html  
-    tlmgr                                   html  
-** building package indices
-** testing if installed package can be loaded
-*** arch - i386
-*** arch - x64
-* DONE (tinytex)
-In R CMD INSTALL</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5UaGUgZG93bmxvYWRlZCBzb3VyY2UgcGFja2FnZXMgYXJlIGluXG5cdOKAmEM6XFxVc2Vyc1xcSGVucnlcXEFwcERhdGFcXExvY2FsXFxUZW1wXFxSdG1wdVFObFRnXFxkb3dubG9hZGVkX3BhY2thZ2Vz4oCZXG4ifQ== -->
-<pre><code>
-The downloaded source packages are in
-    ‘C:\Users\Henry\AppData\Local\Temp\RtmpuQNlTg\downloaded_packages’</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGF0X2N0c19pbnQgPC0gZXhwKGRhdGFfY3RzKVxuXG5gYGAifQ== -->
-<pre class="r"><code>dat_cts_int &lt;- exp(data_cts)
-</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShkYXRhLnRhYmxlKVxuZGF0Q3RzIDwtIGRhdGEuZnJhbWUoZnJlYWQoXCJSTkFzZXFfV1RfREFULmNzdlwiLCBzZWxlY3Q9IGMoNzoyOSksIHNraXAgPSAxLCBoZWFkZXIgPSBUUlVFKSwgcm93Lm5hbWVzPSAxKVxuZGF0LkN0cyA8LSB0KGRhdEN0cylcbmRhdC5DdHMgPC0gZGF0YS5mcmFtZShhcy5tYXRyaXgoZGF0LkN0cywgcm93Lm5hbWVzID0gRkFMU0UpKVxuZGF0QW5ubyA8LSBmaWxlLnBhdGgoXCJkYXRfc2FtcGxlX2Fubm90YXRpb24udHh0XCIpXG4gICAgICAgICAgICAgICAgICAgICAgI3Jvdy5uYW1lcz0gMSlcbiMjZGF0LmV4cC52YWx1ZXMgPC0gd3JpdGUudGFibGUoZGF0Q3RzLCBcImRhdF9leHBfdmFsdWVzLnR4dFwiLCBzZXAgPSBcIiBcIiwgcm93Lm5hbWVzID0gVFJVRSwgY29sLm5hbWVzID0gVFJVRSlcbiMjREFULmV4cHJlc3Npb24gPC0gcmVhZC50YWJsZShcImRhdF9leHBfdmFsdWVzLnR4dFwiKVxuI2RhdF9jdHMgPC0gYXMubWF0cml4KGRhdEN0cywgcm93bmFtZXMgPSBcIlRyYW5zY3JpcHRcIilcbiNkYXRfY29sZGF0YSA8LSBkYXRBbm5vWyxjKFwiZHJ1Z19jb25kaXRcIiwgXCJnZW5vdHlwZVwiKSxdXG5gYGAifQ== -->
+<pre class="r"><code>library(data.table)
+datCts &lt;- data.frame(fread(&quot;RNAseq_WT_DAT.csv&quot;, select= c(7:29), skip = 1, header = TRUE), row.names= 1)
+dat.Cts &lt;- t(datCts)
+dat.Cts &lt;- data.frame(as.matrix(dat.Cts, row.names = FALSE))
+datAnno &lt;- file.path(&quot;dat_sample_annotation.txt&quot;)
+                      #row.names= 1)
+##dat.exp.values &lt;- write.table(datCts, &quot;dat_exp_values.txt&quot;, sep = &quot; &quot;, row.names = TRUE, col.names = TRUE)
+##DAT.expression &lt;- read.table(&quot;dat_exp_values.txt&quot;)
+#dat_cts &lt;- as.matrix(datCts, rownames = &quot;Transcript&quot;)
+#dat_coldata &lt;- datAnno[,c(&quot;drug_condit&quot;, &quot;genotype&quot;),]</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3I6IG9iamVjdCAnZGF0YV9jdHMnIG5vdCBmb3VuZFxuIn0= -->
-<pre><code>Error: object 'data_cts' not found</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
@@ -348,92 +208,45 @@ The downloaded source packages are in
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYWxsKHJvd25hbWVzKGRhdF9jb2xkYXRhKSAlaW4lIGNvbG5hbWVzKGRhdF9jdHMpKVxuYGBgIn0= -->
 <pre class="r"><code>all(rownames(dat_coldata) %in% colnames(dat_cts))</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFRSVUVcbiJ9 -->
-<pre><code>[1] TRUE</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYWxsKHJvd25hbWVzKGRhdF9jb2xkYXRhKSA9PSBjb2xuYW1lcyhkYXRfY3RzKSlcbmBgYCJ9 -->
 <pre class="r"><code>all(rownames(dat_coldata) == colnames(dat_cts))</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFRSVUVcbiJ9 -->
-<pre><code>[1] TRUE</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGF0X2N0cyA8LSBkYXRfY3RzWywgcm93bmFtZXMoZGF0X2NvbGRhdGEpXVxuYWxsKHJvd25hbWVzKGRhdF9jb2xkYXRhKSA9PSBjb2xuYW1lcyhkYXRfY3RzKSlcbmBgYCJ9 -->
 <pre class="r"><code>dat_cts &lt;- dat_cts[, rownames(dat_coldata)]
 all(rownames(dat_coldata) == colnames(dat_cts))</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFRSVUVcbiJ9 -->
-<pre><code>[1] TRUE</code></pre>
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShSY3BwKVxubGlicmFyeShzdHJpbmdpKVxubGlicmFyeShzUkFQKVxucHJvamVjdC5mb2xkZXIgPC0gZ2V0d2QoKVxucHJvamVjdC5uYW1lIDwtIFwiREFUX1JOQXNlcVwiXG5gYGAifQ== -->
+<pre class="r"><code>library(Rcpp)
+library(stringi)
+library(sRAP)
+project.folder &lt;- getwd()
+project.name &lt;- &quot;DAT_RNAseq&quot;</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuUk5BLnFjKGRhdEFubm8sIGRhdC5DdHMsIHByb2plY3QubmFtZSxcbnByb2plY3QuZm9sZGVyLCBwbG90LmxlZ2VuZD0gRkFMU0UsXG5jb2xvci5wYWxldHRlID0gYyhcImdyZWVuXCIsIFwib3JhbmdlXCIpKVxuYGBgIn0= -->
+<pre class="r"><code>RNA.qc(datAnno, dat.Cts, project.name,
+project.folder, plot.legend= FALSE,
+color.palette = c(&quot;green&quot;, &quot;orange&quot;))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiU29tZSBzYW1wbGVzIGluIHNhbXBsZSBkZXNjcmlwdGlvbiBmaWxlIGFyZSBub3QgcHJlc2VudCBpbiB0aGUgZXhwcmVzc2lvbiBmaWxlIVwiXG5bMV0gXCIyMiBpdGVtcyBpbiBzYW1wbGUgZGVzY3JpcHRpb24gZmlsZVwiXG5bMV0gXCIyMiBpdGVtcyBpbiBnZW5lIGV4cHJlc3Npb24gZmlsZVwiXG5bMV0gXCIwIG1hdGNoaW5nIGl0ZW1zIGluIGdlbmUgZXhwcmVzc2lvbiBmaWxlXCJcbiJ9 -->
+<pre><code>[1] &quot;Some samples in sample description file are not present in the expression file!&quot;
+[1] &quot;22 items in sample description file&quot;
+[1] &quot;22 items in gene expression file&quot;
+[1] &quot;0 matching items in gene expression file&quot;</code></pre>
 <!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGF0X3BoZW5vRGF0YSA8LSBuZXcoXCJBbm5vdGF0ZWREYXRhRnJhbWVcIixcbiAgICAgICAgICAgICAgICAgICAgIGRhdGE9IGRhdF9jb2xkYXRhKVxuZGF0X2VzZXQgPC0gRXhwcmVzc2lvblNldChhc3NheURhdGEgPSBkYXRfY3RzLFxuICAgICAgICAgICAgICAgICAgICAgICAgICBwaGVub0RhdGEgPSBkYXRfcGhlbm9EYXRhKVxuYGBgIn0= -->
-<pre class="r"><code>dat_phenoData &lt;- new(&quot;AnnotatedDataFrame&quot;,
-                     data= dat_coldata)
-dat_eset &lt;- ExpressionSet(assayData = dat_cts,
-                          phenoData = dat_phenoData)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3IgaW4gZGF0YS5mcmFtZShudW1lcmljKG4pLCByb3cubmFtZXMgPSBubXMpIDogXG4gIGR1cGxpY2F0ZSByb3cubmFtZXM6IEZCZ24wMDExNTg0LCBGQmduMDAzMTI5NCwgRkJnbjAwMzIxOTUsIEZCZ24wMDMyMTk2LCBGQmduMDAzMjE5NywgRkJnbjAwMzIxOTgsIEZCZ24wMDA0NDE5LCBGQmduMDAwMDIyOSwgRkJnbjAwMjYzNzksIEZCZ24wMDMyMjAyLCBGQmduMDI2MDc0OSwgRkJnbjAwMzIyMTAsIEZCZ24wMDMyMjIxLCBGQmduMDAxOTkzMiwgRkJnbjAwMzIyMjQsIEZCZ24wMDg1Mzk2LCBGQmduMDAzMjIzMCwgRkJnbjAwMzIyMzUsIEZCZ24wMDUxNzE2LCBGQmduMDAzMjI0MywgRkJnbjAwMjIyNjgsIEZCZ24wMDMyMjUxLCBGQmduMDAzMjI1MiwgRkJnbjAwMjc2MTEsIEZCZ24wMDUxNzE5LCBGQmduMDA4NjM0NywgRkJnbjAwMDMzMTAsIEZCZ24wMDIxOTUzLCBGQmduMDAzMjI5NywgRkJnbjAwMTUzMjAsIEZCZ24wMDMyMjk5LCBGQmduMDA1MTg2OSwgRkJnbjAwMDUyNzgsIEZCZ24wMDExNjc2LCBGQmduMDAzMTI5OSwgRkJnbjAwMzIzMDUsIEZCZ24wMDA0MzYzLCBGQmduMDA1MzUwNywgRkJnbjAwNTMxMjksIEZCZ24wMDEwNjEyLCBGQmduMDAyNjE0NywgRkJnbjAwMDAxNDYsIEZCZ24wMDE1NzU2LCBGQmduMDAyMTc2MSwgRkJnbjAyNTA4MzcsIEZCZ24wMDMyMzM2LCBGQmduMDAzMjMzOSwgRkJnbjAwMzIzNDAsIEZCZ24wMDEwMTk3LCBGQmduMDAxNjkyNiwgRkJnbjAyNTk4MjIsIEZCZ24wMjU5NzUwLCBGQmduMDA1MjgzMSwgRkJnbjAwMDAyODcsIEZCZ24wMDMyMzYzLCBGQmduMDI2MTQ1OCwgRkJnbjAwMzIzNjQsIEZCZ24wMDI4NDkwLCBGQmduMDAzMTMxMywgRkJnbjAwMzEzMTUsIEZCZ24wMDMxMjIwLCBGQmduMDAzMTMxOSwgRkJnbjAwMjAzMDksIEZCZ24wMjU5MjI1LCBGQmduMDAzMjM4MiwgRkJnbjAwNDE2MDYsIEZCZ24wMDMyMzg4LCBGQmduMDAzMjM5MSwgRkJnbjAwMzIzOTcsIEZCZ24wMDMyNDAyLCBGQmduMDAyODQyNSwgRkJnbjAwMzI0MDQsIEZCZ24wMDI3NTA1LCBGQmduMDAzMjQwNywgRkJnbjAwMlxuIn0= -->
-<pre><code>Error in data.frame(numeric(n), row.names = nms) : 
-  duplicate row.names: FBgn0011584, FBgn0031294, FBgn0032195, FBgn0032196, FBgn0032197, FBgn0032198, FBgn0004419, FBgn0000229, FBgn0026379, FBgn0032202, FBgn0260749, FBgn0032210, FBgn0032221, FBgn0019932, FBgn0032224, FBgn0085396, FBgn0032230, FBgn0032235, FBgn0051716, FBgn0032243, FBgn0022268, FBgn0032251, FBgn0032252, FBgn0027611, FBgn0051719, FBgn0086347, FBgn0003310, FBgn0021953, FBgn0032297, FBgn0015320, FBgn0032299, FBgn0051869, FBgn0005278, FBgn0011676, FBgn0031299, FBgn0032305, FBgn0004363, FBgn0053507, FBgn0053129, FBgn0010612, FBgn0026147, FBgn0000146, FBgn0015756, FBgn0021761, FBgn0250837, FBgn0032336, FBgn0032339, FBgn0032340, FBgn0010197, FBgn0016926, FBgn0259822, FBgn0259750, FBgn0052831, FBgn0000287, FBgn0032363, FBgn0261458, FBgn0032364, FBgn0028490, FBgn0031313, FBgn0031315, FBgn0031220, FBgn0031319, FBgn0020309, FBgn0259225, FBgn0032382, FBgn0041606, FBgn0032388, FBgn0032391, FBgn0032397, FBgn0032402, FBgn0028425, FBgn0032404, FBgn0027505, FBgn0032407, FBgn002</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3IgaW4gUk5BLnFjKGRhdEFubm8sIGRhdC5DdHMsIHByb2plY3QubmFtZSwgcHJvamVjdC5mb2xkZXIsIHBsb3QubGVnZW5kID0gRkFMU0UsICA6IFxuICBcbiJ9 -->
+<pre><code>Error in RNA.qc(datAnno, dat.Cts, project.name, project.folder, plot.legend = FALSE,  : 
+  </code></pre>
 <!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeSh2aXBlcilcbm1hbGVfcmVndWwgPC0gcmVhZFJEUyhcIkZseV9NYWxlLXRmX3JlZ3Vsb24uUkRTXCIpXG5kYXQudmlwZXIgPC0gdmlwZXIoZGF0X2VzZXQsIHJlZ3Vsb24gPSBtYWxlX3JlZ3VsKVxuYGBgIn0= -->
-<pre class="r"><code>library(viper)
-male_regul &lt;- readRDS(&quot;Fly_Male-tf_regulon.RDS&quot;)
-dat.viper &lt;- viper(dat_eset, regulon = male_regul)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5Db21wdXRpbmcgdGhlIGFzc29jaWF0aW9uIHNjb3Jlc1xuQ29tcHV0aW5nIHJlZ3Vsb25zIGVucmljaG1lbnQgd2l0aCBhUkVBXG5FcnJvciBpbiB3dHNeMiA6IG5vbi1udW1lcmljIGFyZ3VtZW50IHRvIGJpbmFyeSBvcGVyYXRvclxuIn0= -->
-<pre><code>
-Computing the association scores
-Computing regulons enrichment with aREA
-Error in wts^2 : non-numeric argument to binary operator</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc291cmNlKFwiaHR0cHM6Ly9iaW9jb25kdWN0b3Iub3JnL2Jpb2NMaXRlLlJcIilcblxuaWYoIXJlcXVpcmUoXCJwYWNtYW5cIiwgY2hhcmFjdGVyLm9ubHkgPSBUUlVFKSkgaW5zdGFsbC5wYWNrYWdlcyhcInBhY21hblwiKVxucGFjbWFuOjpwX2xvYWQodmlwZXIsZGF0YS50YWJsZSxkcGx5cilcblxuYGBgIn0= -->
-<pre class="r"><code>source(&quot;https://bioconductor.org/biocLite.R&quot;)
-
-if(!require(&quot;pacman&quot;, character.only = TRUE)) install.packages(&quot;pacman&quot;)
-pacman::p_load(viper,data.table,dplyr)
-</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubWFsZV9yZWd1bCA8LSByZWFkUkRTKFwiRmx5X01hbGUtdGZfcmVndWxvbi5SRFNcIilcblxubWFsZV9yZWd1bF9wcnVuZWQgPC0gcHJ1bmVSZWd1bG9uKG1hbGUsIGFkYXB0aXZlID0gVFJVRSlcblxuXG4jIGV4cHJlc3Npb24gYXNzYXkgZGF0YVxuZHNldE0gPC0gZnJlYWQoZmlsZSA9XCJkZ3JwLmFycmF5LmV4cC5tYWxlLmNzdlwiKVxuYGBgIn0= -->
-<pre class="r"><code>male_regul &lt;- readRDS(&quot;Fly_Male-tf_regulon.RDS&quot;)
-
-male_regul_pruned &lt;- pruneRegulon(male, adaptive = TRUE)
-
-
-# expression assay data
-dsetM &lt;- fread(file =&quot;dgrp.array.exp.male.csv&quot;)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBjcmVhdGUgRXhwcmVzc2lvblNldCBvYmplY3Rcbm1hbGVzLm1hdHJpeCA8LSBhcy5tYXRyaXgoZHNldE0sIHJvd25hbWVzID0gXCJnZW5lXCIpXG5tYWxlcy5lc2V0IDwtIEV4cHJlc3Npb25TZXQoYXNzYXlEYXRhPSBtYWxlcy5tYXRyaXgpXG5cbmBgYCJ9 -->
-<pre class="r"><code># create ExpressionSet object
-males.matrix &lt;- as.matrix(dsetM, rownames = &quot;gene&quot;)
-males.eset &lt;- ExpressionSet(assayData= males.matrix)
-</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubWFsZXMudmlwZXIgPC0gdmlwZXIobWFsZXMuZXNldCwgcmVndWxvbiA9IG1hbGVfcmVndWwpXG5gYGAifQ== -->
-<pre class="r"><code>males.viper &lt;- viper(males.eset, regulon = male_regul)</code></pre>
-<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
@@ -477,33 +290,22 @@ counts &lt;- apply(normcounts, 2, infer.counts)</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY291bnRzWzE6NSwgMTo1XVxuYGBgIn0= -->
 <pre class="r"><code>counts[1:5, 1:5]</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICAgICAgTTEtMTAgTTEtMTMgTTEtMjggIE0xLTMgTTEtMzBcbkZCdHIwMDc5OTMwIDMxOTk5IDMzNDE3IDM0OTg2IDMyMTcwIDI1Nzk3XG5GQnRyMDA3OTkzMSA0ODIzNyA0ODc3MCAzOTUwOSA0Nzc1MCA0NDY5OFxuRkJ0cjAwNzk5MzIgNDU3MDQgNDY4NjggMzc4MTggNDU5MzYgNDM0OTNcbkZCdHIwMDc5OTM0ICAgNzA4ICAxOTM1ICAgNDY2ICAgNzE2ICAgNzQyXG5GQnRyMDA3OTkzNSAgICA3NiAgIDM2NCAgIDE2OCAgIDQyNiAgIDkxOVxuIn0= -->
-<pre><code>            M1-10 M1-13 M1-28  M1-3 M1-30
-FBtr0079930 31999 33417 34986 32170 25797
-FBtr0079931 48237 48770 39509 47750 44698
-FBtr0079932 45704 46868 37818 45936 43493
-FBtr0079934   708  1935   466   716   742
-FBtr0079935    76   364   168   426   919</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShcIkRFU2VxMlwiKVxuZGF0X2RkcyA8LSBERVNlcURhdGFTZXRGcm9tTWF0cml4KGNvdW50RGF0YSA9IGRhdF9jdHMsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb2xEYXRhID0gZGF0X2NvbGRhdGEsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICBkZXNpZ24gPSB+IGRydWdfY29uZGl0KVxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShcIkRFU2VxMlwiKVxuZGF0X2RkcyA8LSBERVNlcURhdGFTZXRGcm9tTWF0cml4KGNvdW50RGF0YSA9IGRhdF9jdHMsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb2xEYXRhID0gZGF0X2NvbGRhdGEsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICBkZXNpZ24gPSB+IGRydWdfY29uZGl0KVxuZGF0X2Rkc1xuYGBgIn0= -->
 <pre class="r"><code>library(&quot;DESeq2&quot;)
 dat_dds &lt;- DESeqDataSetFromMatrix(countData = dat_cts,
                               colData = dat_coldata,
-                              design = ~ drug_condit)</code></pre>
+                              design = ~ drug_condit)
+dat_dds</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3IgaW4gREVTZXFEYXRhU2V0KHNlLCBkZXNpZ24gPSBkZXNpZ24sIGlnbm9yZVJhbmspIDogXG4gIHNvbWUgdmFsdWVzIGluIGFzc2F5IGFyZSBub3QgaW50ZWdlcnNcbiJ9 -->
-<pre><code>Error in DESeqDataSet(se, design = design, ignoreRank) : 
-  some values in assay are not integers</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQoNCmBgYHtyIGluc3RhbGwgREVTZXEyfQ0Kc291cmNlKCJodHRwczovL2Jpb2NvbmR1Y3Rvci5vcmcvYmlvY0xpdGUuUiIpDQpiaW9jTGl0ZSgiREVTZXEyIikNCmBgYA0KDQpgYGB7ciBsb2FkIGluIGRhdGF9DQpkYXRDdHMgPC0gZnJlYWQoIlJOQXNlcV9XVF9EQVQuY3N2Iiwgc2VsZWN0PSBjKDYsIDg6MjkpLCBza2lwID0gMSkNCg0KZGF0QW5ubyA8LSByZWFkLmNzdigiZGF0X3NhbXBsZV9hbm5vdGF0aW9uLmNzdiIsIHJvdy5uYW1lcz0gMSkNCg0KDQpkYXRfY3RzIDwtIGFzLm1hdHJpeChkYXRDdHMkLCByb3duYW1lcyA9ICJFbnNlbWJsR2VuZSIpDQpkYXRfY3RzX2ludCA8LSBleHAoZGF0YV9jdHMpDQpkYXRfY29sZGF0YSA8LSBkYXRBbm5vWyxjKCJkcnVnX2NvbmRpdCIsICJnZW5vdHlwZSIpLF0NCg0KYGBgDQoNCmBgYHtyIHZlcmlmeSB0aGF0IGFsbCByb3duYW1lcyBhcHBlYXIgaW4gY3RzIG1hdHJpeH0NCmFsbChyb3duYW1lcyhkYXRfY29sZGF0YSkgJWluJSBjb2xuYW1lcyhkYXRfY3RzKSkNCmBgYA0KYGBge3IgdmVyaWZ5IGFsbCByb3duYW1lcyBhbmQgY29sbmFtZXMgYXJlIGVxdWFsfQ0KYWxsKHJvd25hbWVzKGRhdF9jb2xkYXRhKSA9PSBjb2xuYW1lcyhkYXRfY3RzKSkNCmBgYA0KYGBge3IgdW5uZWNlc3Nhcnk/fQ0KZGF0X2N0cyA8LSBkYXRfY3RzWywgcm93bmFtZXMoZGF0X2NvbGRhdGEpXQ0KYWxsKHJvd25hbWVzKGRhdF9jb2xkYXRhKSA9PSBjb2xuYW1lcyhkYXRfY3RzKSkNCmBgYA0KYGBge3J9DQpkYXRfcGhlbm9EYXRhIDwtIG5ldygiQW5ub3RhdGVkRGF0YUZyYW1lIiwNCiAgICAgICAgICAgICAgICAgICAgIGRhdGE9IGRhdF9jb2xkYXRhKQ0KZGF0X2VzZXQgPC0gRXhwcmVzc2lvblNldChhc3NheURhdGEgPSBkYXRfY3RzLA0KICAgICAgICAgICAgICAgICAgICAgICAgICBwaGVub0RhdGEgPSBkYXRfcGhlbm9EYXRhKQ0KYGBgDQpgYGB7cn0NCmxpYnJhcnkodmlwZXIpDQptYWxlX3JlZ3VsIDwtIHJlYWRSRFMoIkZseV9NYWxlLXRmX3JlZ3Vsb24uUkRTIikNCmRhdC52aXBlciA8LSB2aXBlcihkYXRfZXNldCwgcmVndWxvbiA9IG1hbGVfcmVndWwpDQpgYGANCg0KDQoNCg0KDQoNCg0KYGBge3IgaW5zdGFsbCBhbmQgbG9hZCBwYWNrYWdlc30NCnNvdXJjZSgiaHR0cHM6Ly9iaW9jb25kdWN0b3Iub3JnL2Jpb2NMaXRlLlIiKQ0KDQppZighcmVxdWlyZSgicGFjbWFuIiwgY2hhcmFjdGVyLm9ubHkgPSBUUlVFKSkgaW5zdGFsbC5wYWNrYWdlcygicGFjbWFuIikNCnBhY21hbjo6cF9sb2FkKHZpcGVyLGRhdGEudGFibGUsZHBseXIpDQoNCmBgYA0KDQpgYGB7ciBsb2FkIGZseSBkYXRhfQ0KbWFsZV9yZWd1bCA8LSByZWFkUkRTKCJGbHlfTWFsZS10Zl9yZWd1bG9uLlJEUyIpDQoNCm1hbGVfcmVndWxfcHJ1bmVkIDwtIHBydW5lUmVndWxvbihtYWxlLCBhZGFwdGl2ZSA9IFRSVUUpDQoNCg0KIyBleHByZXNzaW9uIGFzc2F5IGRhdGENCmRzZXRNIDwtIGZyZWFkKGZpbGUgPSJkZ3JwLmFycmF5LmV4cC5tYWxlLmNzdiIpDQpgYGANCg0KYGBge3IgZ2VuZXJhdGUgZXhwcmVzc2lvbnNldHMgZnJvbSBtYXRyaWNlc30NCiMgY3JlYXRlIEV4cHJlc3Npb25TZXQgb2JqZWN0DQptYWxlcy5tYXRyaXggPC0gYXMubWF0cml4KGRzZXRNLCByb3duYW1lcyA9ICJnZW5lIikNCm1hbGVzLmVzZXQgPC0gRXhwcmVzc2lvblNldChhc3NheURhdGE9IG1hbGVzLm1hdHJpeCkNCg0KYGBgDQoNCg0KYGBge3IgcnVuIHZpcGVyfQ0KbWFsZXMudmlwZXIgPC0gdmlwZXIobWFsZXMuZXNldCwgcmVndWxvbiA9IG1hbGVfcmVndWwpDQpgYGANCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCmBgYHtyfQ0KbGlicmFyeShhc3NlcnR0aGF0KQ0KbGlicmFyeShtYWdyaXR0cikNCg0KaW5mZXIuY291bnRzIDwtIGZ1bmN0aW9uKHgsIGRpZ2l0cz0zKSB7DQogICAgYXNzZXJ0X3RoYXQoYWxsKHggPj0gMCkpDQogICAgYXNzZXJ0X3RoYXQoZGlnaXRzID49IDIpDQogICAgIyMgR2V0IGFsbCBkaWZmcyBiZXR3ZWVuIHN1Y2Nlc3NpdmUgdW5pcXVlIHZhbHVlcw0KICAgIGRpZmZzIDwtIHggJT4lIHNvcnQgJT4lIHVuaXF1ZSAlPiUgZGlmZg0KICAgICMjIFJvdW5kIHRvIGEgZmV3IGRpZ2l0cyB0byB3b3JrIGFyb3VuZCBpbmV4YWN0IHJlcHJlc2VudGF0aW9uDQogICAgYXBwcm94ZGlmZnMgPC0gc2lnbmlmKGRpZmZzLCBkaWdpdHMpDQogICAgIyMgRmluZCB0aGUgcm91bmRlZCBpbnRlcnZhbCB0aGF0IG9jY3VycyBtb3N0IG9mdGVuDQogICAgYXBwcm94Z3Vlc3MgPC0gYXBwcm94ZGlmZnMgJT4lIHRhYmxlICU+JSAuW3doaWNoLm1heCguKV0gJT4lIG5hbWVzICU+JSBhcy5udW1lcmljDQogICAgIyMgRmluZCBhbGwgdGhlIGludGVydmFscyB0aGF0IHdlcmUgcm91bmRlZCB0byB0aGUgc2VsZWN0ZWQgb25lLCBhbmQgdGFrZSB0aGVpciBtZWFuDQogICAgdW5pdC5ndWVzcyA8LSBkaWZmc1thcHByb3hkaWZmcyA9PSBhcHByb3hndWVzc10gJT4lIG1lYW4NCiAgICBtZXNzYWdlKCJHdWVzc2luZyAxIGNvdW50ID0gIiwgdW5pdC5ndWVzcykNCiAgICAjIyBEaXZpZGUgdGhlIG9yaWdpbmFsIHZlY3RvciBieSB0aGUgdW5pdCBndWVzcywgYW5kIHJvdW5kIHRvIGENCiAgICAjIyBmZXcgc2lnbmlmaWNhbnQgZGlnaXRzLCB3aGljaCBzaG91bGQgaWRlYWxseSByb3VuZCBldmVyeXRoaW5nDQogICAgIyMgdG8gaW50ZWdlcnMuDQogICAgcm91bmQoeCAvIHVuaXQuZ3Vlc3MsIGRpZ2l0cykNCn0NCg0KYGBgDQpgYGB7cn0NCm5vcm1jb3VudHMgPC0gZGF0X2N0cw0KY291bnRzIDwtIGFwcGx5KG5vcm1jb3VudHMsIDIsIGluZmVyLmNvdW50cykNCmBgYA0KYGBge3J9DQpub3JtY291bnRzWzE6NSwgMTo1XQ0KYGBgDQpgYGB7cn0NCmNvdW50c1sxOjUsIDE6NV0NCmBgYA0KDQoNCg0KDQoNCg0KDQpgYGB7cn0NCmxpYnJhcnkoIkRFU2VxMiIpDQpkYXRfZGRzIDwtIERFU2VxRGF0YVNldEZyb21NYXRyaXgoY291bnREYXRhID0gZGF0X2N0cywNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNvbERhdGEgPSBkYXRfY29sZGF0YSwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGRlc2lnbiA9IH4gZHJ1Z19jb25kaXQpDQpkYXRfZGRzDQpgYGANCg0K</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQoNCmBgYHtyIGluc3RhbGwgREVTZXEyfQ0Kc291cmNlKCJodHRwczovL2Jpb2NvbmR1Y3Rvci5vcmcvYmlvY0xpdGUuUiIpDQojYmlvY0xpdGUoIkRFU2VxMiIpDQpiaW9jTGl0ZSgic1JBUCIpDQppbnN0YWxsLnBhY2thZ2VzKCJSY3BwIikNCmluc3RhbGwucGFja2FnZXMoInN0cmluZ2kiKQ0KYGBgDQoNCmBgYHtyIGxvYWQgaW4gZGF0YX0NCmxpYnJhcnkoZGF0YS50YWJsZSkNCg0KZGF0Q3RzIDwtIGRhdGEuZnJhbWUoZnJlYWQoIlJOQXNlcV9XVF9EQVQuY3N2Iiwgc2VsZWN0PSBjKDc6MjkpLCBza2lwID0gMSwgaGVhZGVyID0gVFJVRSksIHJvdy5uYW1lcz0gMSkNCmRhdC5DdHMgPC0gdChkYXRDdHMpDQpkYXQuQ3RzIDwtIGRhdGEuZnJhbWUoYXMubWF0cml4KGRhdC5DdHMsIHJvdy5uYW1lcyA9IEZBTFNFKSkNCg0KDQoNCmRhdEFubm8gPC0gZmlsZS5wYXRoKCJkYXRfc2FtcGxlX2Fubm90YXRpb24udHh0IikNCiAgICAgICAgICAgICAgICAgICAgICAjcm93Lm5hbWVzPSAxKQ0KDQpkYXQuQW5ubyA8LSByZWFkLnRhYmxlKCJkYXRfc2FtcGxlX2Fubm90YXRpb24udHh0IikNCg0KDQoNCiNmb3IgRGVTZXEyDQojI2RhdC5leHAudmFsdWVzIDwtIHdyaXRlLnRhYmxlKGRhdEN0cywgImRhdF9leHBfdmFsdWVzLnR4dCIsIHNlcCA9ICIgIiwgcm93Lm5hbWVzID0gVFJVRSwgY29sLm5hbWVzID0gVFJVRSkNCiMjREFULmV4cHJlc3Npb24gPC0gcmVhZC50YWJsZSgiZGF0X2V4cF92YWx1ZXMudHh0IikNCg0KDQojZGF0X2N0cyA8LSBhcy5tYXRyaXgoZGF0Q3RzLCByb3duYW1lcyA9ICJUcmFuc2NyaXB0IikNCiNkYXRfY29sZGF0YSA8LSBkYXRBbm5vWyxjKCJkcnVnX2NvbmRpdCIsICJnZW5vdHlwZSIpLF0NCg0KYGBgDQoNCmBgYHtyIHZlcmlmeSB0aGF0IGFsbCByb3duYW1lcyBhcHBlYXIgaW4gY3RzIG1hdHJpeDogRGVTZXEyfQ0KYWxsKHJvd25hbWVzKGRhdF9jb2xkYXRhKSAlaW4lIGNvbG5hbWVzKGRhdF9jdHMpKQ0KYGBgDQpgYGB7ciB2ZXJpZnkgYWxsIHJvd25hbWVzIGFuZCBjb2xuYW1lcyBhcmUgZXF1YWw6IERlU2VxMn0NCmFsbChyb3duYW1lcyhkYXRfY29sZGF0YSkgPT0gY29sbmFtZXMoZGF0X2N0cykpDQpgYGANCmBgYHtyIHVubmVjZXNzYXJ5PzogRGVzZXEyfQ0KZGF0X2N0cyA8LSBkYXRfY3RzWywgcm93bmFtZXMoZGF0X2NvbGRhdGEpXQ0KYWxsKHJvd25hbWVzKGRhdF9jb2xkYXRhKSA9PSBjb2xuYW1lcyhkYXRfY3RzKSkNCmBgYA0KDQpgYGB7cn0NCmxpYnJhcnkoUmNwcCkNCmxpYnJhcnkoc3RyaW5naSkNCmxpYnJhcnkoc1JBUCkNCg0KDQpwcm9qZWN0LmZvbGRlciA8LSBnZXR3ZCgpDQpwcm9qZWN0Lm5hbWUgPC0gIkRBVF9STkFzZXEiDQpgYGANCmBgYHtyfQ0KDQpSTkEucWMoZGF0QW5ubywgZGF0LkN0cywgcHJvamVjdC5uYW1lLA0KcHJvamVjdC5mb2xkZXIsIHBsb3QubGVnZW5kPSBGQUxTRSwNCmNvbG9yLnBhbGV0dGUgPSBjKCJncmVlbiIsICJvcmFuZ2UiKSkNCmBgYA0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KYGBge3J9DQpsaWJyYXJ5KGFzc2VydHRoYXQpDQpsaWJyYXJ5KG1hZ3JpdHRyKQ0KDQppbmZlci5jb3VudHMgPC0gZnVuY3Rpb24oeCwgZGlnaXRzPTMpIHsNCiAgICBhc3NlcnRfdGhhdChhbGwoeCA+PSAwKSkNCiAgICBhc3NlcnRfdGhhdChkaWdpdHMgPj0gMikNCiAgICAjIyBHZXQgYWxsIGRpZmZzIGJldHdlZW4gc3VjY2Vzc2l2ZSB1bmlxdWUgdmFsdWVzDQogICAgZGlmZnMgPC0geCAlPiUgc29ydCAlPiUgdW5pcXVlICU+JSBkaWZmDQogICAgIyMgUm91bmQgdG8gYSBmZXcgZGlnaXRzIHRvIHdvcmsgYXJvdW5kIGluZXhhY3QgcmVwcmVzZW50YXRpb24NCiAgICBhcHByb3hkaWZmcyA8LSBzaWduaWYoZGlmZnMsIGRpZ2l0cykNCiAgICAjIyBGaW5kIHRoZSByb3VuZGVkIGludGVydmFsIHRoYXQgb2NjdXJzIG1vc3Qgb2Z0ZW4NCiAgICBhcHByb3hndWVzcyA8LSBhcHByb3hkaWZmcyAlPiUgdGFibGUgJT4lIC5bd2hpY2gubWF4KC4pXSAlPiUgbmFtZXMgJT4lIGFzLm51bWVyaWMNCiAgICAjIyBGaW5kIGFsbCB0aGUgaW50ZXJ2YWxzIHRoYXQgd2VyZSByb3VuZGVkIHRvIHRoZSBzZWxlY3RlZCBvbmUsIGFuZCB0YWtlIHRoZWlyIG1lYW4NCiAgICB1bml0Lmd1ZXNzIDwtIGRpZmZzW2FwcHJveGRpZmZzID09IGFwcHJveGd1ZXNzXSAlPiUgbWVhbg0KICAgIG1lc3NhZ2UoIkd1ZXNzaW5nIDEgY291bnQgPSAiLCB1bml0Lmd1ZXNzKQ0KICAgICMjIERpdmlkZSB0aGUgb3JpZ2luYWwgdmVjdG9yIGJ5IHRoZSB1bml0IGd1ZXNzLCBhbmQgcm91bmQgdG8gYQ0KICAgICMjIGZldyBzaWduaWZpY2FudCBkaWdpdHMsIHdoaWNoIHNob3VsZCBpZGVhbGx5IHJvdW5kIGV2ZXJ5dGhpbmcNCiAgICAjIyB0byBpbnRlZ2Vycy4NCiAgICByb3VuZCh4IC8gdW5pdC5ndWVzcywgZGlnaXRzKQ0KfQ0KDQpgYGANCmBgYHtyfQ0Kbm9ybWNvdW50cyA8LSBkYXRfY3RzDQpjb3VudHMgPC0gYXBwbHkobm9ybWNvdW50cywgMiwgaW5mZXIuY291bnRzKQ0KYGBgDQpgYGB7cn0NCm5vcm1jb3VudHNbMTo1LCAxOjVdDQpgYGANCmBgYHtyfQ0KY291bnRzWzE6NSwgMTo1XQ0KYGBgDQoNCg0KDQoNCg0KDQoNCmBgYHtyfQ0KbGlicmFyeSgiREVTZXEyIikNCmRhdF9kZHMgPC0gREVTZXFEYXRhU2V0RnJvbU1hdHJpeChjb3VudERhdGEgPSBkYXRfY3RzLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY29sRGF0YSA9IGRhdF9jb2xkYXRhLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZGVzaWduID0gfiBkcnVnX2NvbmRpdCkNCmRhdF9kZHMNCmBgYA0KDQo=</div>
 
 
 
